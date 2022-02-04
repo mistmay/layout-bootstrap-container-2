@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Giuseppe Marchesiello">
+    <meta name="description" content="Exercize Html Css Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            min-height: 100vh;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        header,
+        footer {
+            height: 60px;
+        }
+
+        nav,
+        aside,
+        article {
+            height: 600px;
+        }
+
+        .area {
+            height: 50px;
+        }
+
+        .big-area {
+            height: calc(100% - 50px);
+        }
+
+        #article-sections {
+            height: calc(100% - 150px);
+        }
+
+        article section {
+            height: 47%;
+        }
+
+        aside section {
+            height: 25%;
+        }
+    </style>
+    <title>Exercize Html Css Bootstrap</title>
+</head>
+
+<body class="p-3 d-flex justify-content-between align-items-center flex-column">
+    <header class="container-fluid bg-info mb-4 d-flex justify-content-center align-items-center">
+        <h3>Header</h3>
+    </header>
+    <main class="container-fluid">
+        <div class="row d-flex justify-content-between align-items-center gy-5">
+            <nav class="col-md-2 bg-warning py-2 px-4">
+                <div class="area d-flex justify-content-center align-items-center">
+                    <h3>Nav</h3>
+                </div>
+                <div class="big-area d-flex justify-content-center align-items-start">
+                    <h3>Nav-Header</h3>
+                </div>
+            </nav>
+            <article class="col-md-7 bg-success py-2 px-4">
+                <div class="area d-flex justify-content-center align-items-center">
+                    <h3>Article</h3>
+                </div>
+                <div class="area d-flex justify-content-center align-items-center">
+                    <h3>Article Header</h3>
+                </div>
+                <div id="article-sections" class="d-flex flex-column justify-content-between align-items-center">
+                    <section class="w-100 bg-primary d-flex justify-content-center align-items-center">
+                        <h3>Section</h3>
+                    </section>
+                    <section class="w-100 bg-primary d-flex justify-content-center align-items-center">
+                        <h3>Section</h3>
+                    </section>
+                </div>
+                <div class="area d-flex justify-content-center align-items-center">
+                    <h3>Article Footer</h3>
+                </div>
+            </article>
+            <aside class="col-md-2 bg-warning py-2 px-4">
+                <div class="area d-flex justify-content-center align-items-center">
+                    <h3>Aside</h3>
+                </div>
+                <div class="big-area d-flex justify-content-evenly align-items-center flex-column">
+                    <section class="w-100 bg-danger d-flex justify-content-center align-items-center">
+                        <h3>Section</h3>
+                    </section>
+                    <section class="w-100 bg-danger d-flex justify-content-center align-items-center">
+                        <h3>Section</h3>
+                    </section>
+                    <section class="w-100 bg-danger d-flex justify-content-center align-items-center">
+                        <h3>Section</h3>
+                    </section>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="container-fluid bg-info mt-4 d-flex justify-content-center align-items-center">
+        <h3>Footer</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
